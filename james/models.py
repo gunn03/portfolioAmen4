@@ -63,8 +63,11 @@ class Portfolio(models.Model):
     image = models.ImageField(upload_to='portfolio/')
     link = models.URLField(max_length=200)
 
+
+# CONTACTS SECTION
+
+class Contacts(models.Model):
+    email = models.CharField(max_length=100)
+
     def __str__(self):
         return f'Portfolio {self.id}'
-
-
-
